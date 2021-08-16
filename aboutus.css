@@ -1,0 +1,42 @@
+
+h5 {
+    color: red;
+    margin-top: 5%;
+    font-weight: bold;
+}
+h1{
+    color:#00022e;
+    font-weight: bold;
+    font-size: 55px;
+}
+
+
+.bm{
+    background-color:#00022e;
+    border-radius: 30px;
+    color: white;
+    width: 300px;
+    height: 40px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+}
+.bm:hover{
+    background-color: skyblue;
+    color: red;
+}
+.col-12{
+    margin-left: 5%;
+}
+.col{
+    margin-top: 10%;
+}
+
+.imgg{
+    border-radius: 30px;
+     margin-left: 10%
+}
+ 

@@ -1,0 +1,36 @@
+.galleryBtn{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.galleryBtn button:hover{
+    background-color: skyblue;
+}
+
+.galleryBtn button{
+    margin-bottom: 20px;
+    background-color: #00022e;
+    color: white;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+
+.alumni .col-4, .extracurricular .col-4, .achievement .col-4, .buildings .col-4 {
+    margin-bottom: 8%;
+}
+
+.col-8 h2{
+    color: #00022e;
+    margin-bottom: 5%;
+}
+
+.col-8 .card-title{
+color: red;
+}
+
+.extracurricular{
+    display: none;
+}

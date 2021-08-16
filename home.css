@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.firstHeader{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+.emailIcon{
+    position: absolute;
+    left: 3%;
+    bottom: 15%;
+    font-size: 20px;
+}
+.phoneIcon{
+    position: absolute;
+    right: 40%;
+    bottom: 15%;
+    padding-left: 2%;
+    font-size: 20px;
+}
+.email{
+    padding-right: 1%;
+}
+.phoneNumber{
+    margin-left: 5%;
+}
+
+.topHeader{
+    background-color: #00022e;
+    color: white;
+}
+
+.navContent span{
+    margin-right: 25px;
+    font-weight: 1000;
+    font-size: 1.1rem;
+
+}
+
+.navs a{
+    text-decoration: none;
+    color: #00022e;
+}
+
+
+.navs a:hover{
+    color: red;
+    border-bottom: 4px solid #00022e;
+}
+
+
+.slide-text{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+
+.slide-text h1{
+    color: #00022e;
+}
+.slide-text .paraText{
+    color: red;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.PrimaryBtn{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #00022e;
+    color: white;
+    margin-top: 12%;
+    margin-right: 5%;
+    text-align: center;
+    width: 170px;
+    height: 50px;
+
+}
+
+.secondaryBtn{
+    border-radius: 10px;
+    padding: 5px;
+    width: 180px;
+    background-color: red;
+    color: white;
+    margin-top: 12%;
+    text-align: center;
+    height: 50px;
+}
+
+.homeEnrolbtn{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #00022e;
+    color: white;
+    margin-top: 5%;
+    margin-right: 5%;
+    text-align: center;
+    width: 170px;
+    height: 50px;
+
+}
+
+.slideGalleryBtn{
+    border-radius: 10px;
+    padding: 5px;
+    width: 170px;
+    background-color: red;
+    color: white;
+    margin-top: 12%;
+    text-align: center;
+    height: 50px;
+
+}
+
+
+.slideGalleryBtn:hover, .homeEnrolbtn:hover, .secondaryBtn:hover, .PrimaryBtn:hover{
+    background-color: skyblue;
+    color: red;
+}
+
+.firstBodyImg{
+    border-radius: 10px;
+}
+.firstTitle{
+    color: red;
+    margin-bottom: 2%;
+}
+.secondTitle{
+    color: #00022e;
+    margin-bottom: 5%;
+}
+.learnMore, .viewAll{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #00022e;
+    color: white;
+}
+
+.viewAll:hover, .learnMore:hover{
+background-color: skyblue;
+color: red;
+}
+
+.visionHeader, .missionHeader{
+    color: red;
+}
+.believe , .achieve{
+    color: #00022e;
+    margin-bottom: 3%;
+}
+
+.anthemHeader, .schoolPledge{
+    color: red;
+}
+.galleryHeader{
+    margin-bottom: 3%;
+}
+.galleryImg{
+    margin-bottom: 3%;
+}
+
+.footerCont{
+    color: white;
+    margin-top: 10%;
+    background-color: #00022e;
+}
+
+.footerHeader{
+    color: red;
+    margin-bottom: 7%;
+    font-size: 22px;
+}
+.socialCont span{
+    margin-right: 20px;
+    font-size: 25px;
+}

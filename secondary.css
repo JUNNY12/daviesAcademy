@@ -1,0 +1,29 @@
+.secondaySchImg{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 8%;
+}
+.SecondarytopHeader{
+    color: red;
+    margin-bottom: 2%;
+}
+.mainHeader{
+    color: #00022e;
+}
+
+.btnEnrol{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    background-color: #00022e;
+    position: relative;
+    text-align: center;
+}
+
+.btnEnrolCont{
+    position: absolute;
+    top: 22%;
+    left: 13%;
+}
+

@@ -1,0 +1,24 @@
+.staffimg img{
+width: 100%;
+height: 250px;
+}
+
+.staffMiniHeader{
+    color: red;
+    margin-top: 8%;
+}
+.staffmainHeader{
+    color: #00022e;
+}
+.paraStaff{
+    margin-bottom: 8%;
+    color: black;
+    font-weight: 600;
+}
+
+.card-title{
+    color: #00022e;
+}
+.card-text{
+    color: red;
+}

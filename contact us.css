@@ -1,0 +1,64 @@
+input, button{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    margin-bottom: 2%;
+    width: 80%;
+    height: 50px;
+}
+form textarea{
+    width: 80%;
+    margin-bottom: 2%;
+}
+.btnForm{
+    width: 45%;
+    height: 50px;
+    background-color: #00022e;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 18px;
+
+}
+.btnForm p{
+    position: absolute;
+    top:25%;
+    left: 25%;
+}
+.btnForm:hover{
+    background-color: red;
+}
+
+.whatsappChat{
+    width: 45%;
+    height: 50px;
+    background-color: #00022e;
+    color: white;
+    margin-top: 8%;
+    position: relative;
+    border-radius: 30px;
+    font-size: 20px;
+    animation-name: backgroundChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backgroundChange {
+    0% {background-color: #00022e;}
+    50% {background-color: red;}
+    100%{background-color: skyblue;}
+  }
+
+
+
+.contacttext{
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    
+}
+
+
