@@ -1,63 +1,56 @@
-let containerAchievement = document.getElementById("achievementCont");
-let showAchievement = document.querySelector(".achievement");
+"strict mode"
+// Gallery section
+const containerAchievement = document.getElementById("achievementCont");
+const showAchievement = document.querySelector(".achievement");
 
-let containerExtracuricular = document.getElementById("extracuricularCont");
-let showExtracuricular = document.querySelector(".extracurricular")
+const containerExtracuricular = document.getElementById("extracuricularCont");
+const showExtracuricular = document.querySelector(".extracurricular");
 
-let containerBuildings = document.getElementById("buildingsCont");
-let showBuildings = document.querySelector(".buildings")
+const containerBuildings = document.getElementById("buildingsCont");
+const showBuildings = document.querySelector(".buildings");
 
-let containerAlumni = document.getElementById("alumniCont");
-let showAlumni = document.querySelector(".alumni")
-
-
-
-function showGallery (){  
-containerExtracuricular.addEventListener("click", function(e){
-    e.preventDefault()
-    showExtracuricular.style.display="block"
-    showAchievement.style.display="none"
-    showBuildings.style.display="none";
-    showAlumni.style.display="none"
-       
-})
-
-containerAchievement.addEventListener("click", function(e){
-    e.preventDefault()
-   showAchievement.style.display="block";
-   showExtracuricular.style.display="none";
-   showBuildings.style.display="none";
-   showAlumni.style.display="none";
-  
-})
-
-containerBuildings.addEventListener("click", function(e){
-    e.preventDefault()
-   showAchievement.style.display="none";
-   showExtracuricular.style.display="none";
-   showBuildings.style.display="block";
-   showAlumni.style.display="none"
-    
-})
+const containerAlumni = document.getElementById("alumniCont");
+const showAlumni = document.querySelector(".alumni");
 
 
-containerAlumni.addEventListener("click", function(e){
-    e.preventDefault()
-   showAchievement.style.display="none";
-   showExtracuricular.style.display="none";
-   showBuildings.style.display="none";
-   showAlumni.style.display="block"
-    
-})
+function achievementShow(){
+        showAchievement.style.display="block";
+        showAlumni.style.display=showBuildings.style.display=showExtracuricular.style.display="none"
+}
+
+function extracurricularShow(){
+      showExtracuricular.style.display="block";
+      showAlumni.style.display=showBuildings.style.display=showAchievement.style.display="none";
+}
+
+function buildingShow(){
+        showBuildings.style.display="block"
+        showAlumni.style.display=showAchievement.style.display=showExtracuricular.style.display="none"
+}
 
 
 
+function alumniShow(){
+        showAlumni.style.display="block";
+        showBuildings.style.display=showAchievement.style.display=showExtracuricular.style.display="none"
+}
 
-
-
-
-
+// scroll top Section
+function scrolling(){
+    const topscroll= document.getElementById("scrollTop")
+    window.scrollTo({
+        top:0
+    });
 
 }
 
-showGallery();
+if( location.pathname === "/home"){
+        
+        
+}
+
+
+if( location.pathname === "/Gallerypage"){
+        
+}
+

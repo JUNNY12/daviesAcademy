@@ -21,6 +21,10 @@
     text-align: center;
 }
 
+.btnEnrol:hover{
+    background-color: skyblue;
+}
+
 .btnEnrolCont{
     position: absolute;
     top: 22%;

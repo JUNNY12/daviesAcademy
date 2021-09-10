@@ -37,6 +37,14 @@ h1{
 
 .imgg{
     border-radius: 30px;
-     margin-left: 10%
+
+}
+
+
+@media all and (max-width:300px),(max-width:480px),(max-width:600px),(max-width:768px){
+    
+.imgg{
+    display: none;
+}
 }
  

@@ -6,54 +6,46 @@
 }
 
 .firstHeader{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    position: relative;
+    font-size: 25px;
+    animation-name: sloganAnime;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
-.emailIcon{
-    position: absolute;
-    left: 3%;
-    bottom: 15%;
-    font-size: 20px;
+
+
+
+
+
+@keyframes sloganAnime{
+  0% {color: white;}
+  25%  {color: red;}
+  50%  {color: white;}
+  100% {color: skyblue;}
 }
-.phoneIcon{
-    position: absolute;
-    right: 40%;
-    bottom: 15%;
-    padding-left: 2%;
-    font-size: 20px;
-}
-.email{
-    padding-right: 1%;
-}
-.phoneNumber{
-    margin-left: 5%;
+
+
+
+
+
+
+
+
+.schoolName{
+    font-size: 30px;
 }
 
 .topHeader{
     background-color: #00022e;
     color: white;
+    height: 50px;
+    width: auto;
+    position: relative;
 }
-
-.navContent span{
-    margin-right: 25px;
-    font-weight: 1000;
-    font-size: 1.1rem;
-
-}
-
-.navs a{
-    text-decoration: none;
+.nav-link {
     color: #00022e;
+    font-size: 20px;
+    font-weight: 800;
 }
-
-
-.navs a:hover{
-    color: red;
-    border-bottom: 4px solid #00022e;
-}
-
 
 .slide-text{
     position: absolute;
@@ -64,6 +56,7 @@
 
 .slide-text h1{
     color: #00022e;
+    font-size: 20px;
 }
 .slide-text .paraText{
     color: red;
@@ -90,7 +83,7 @@
     width: 180px;
     background-color: red;
     color: white;
-    margin-top: 12%;
+    margin-top: 8%;
     text-align: center;
     height: 50px;
 }
@@ -100,7 +93,7 @@
     padding: 5px;
     background-color: #00022e;
     color: white;
-    margin-top: 5%;
+    margin-top: 8%;
     margin-right: 5%;
     text-align: center;
     width: 170px;
@@ -114,7 +107,7 @@
     width: 170px;
     background-color: red;
     color: white;
-    margin-top: 12%;
+    margin-top: 30%;
     text-align: center;
     height: 50px;
 
@@ -133,6 +126,22 @@
     color: red;
     margin-bottom: 2%;
 }
+
+
+
+.textAnime{
+    animation-duration: 4s;
+	animation-name: slideinText;
+    position: relative;
+}
+
+@keyframes slideinText {
+	from {left: 100%;}
+	
+	to {left:0%;}
+}
+
+
 .secondTitle{
     color: #00022e;
     margin-bottom: 5%;
@@ -169,7 +178,7 @@ color: red;
 
 .footerCont{
     color: white;
-    margin-top: 10%;
+    margin-top: 20%;
     background-color: #00022e;
 }
 
@@ -181,4 +190,108 @@ color: red;
 .socialCont span{
     margin-right: 20px;
     font-size: 25px;
+}
+
+h4.footNum, h4.footEmail{
+    position: relative;
+    left: 3%;
+}
+
+
+
+.scrollTopContainer{
+height: 30px;
+width: 30px;
+background-color: skyblue;
+display: flex;
+justify-content: center;
+align-items:center;
+position: fixed;
+right: 30px;
+bottom: 20px;
+border-radius: 5px;
+z-index: 99;
+}
+
+.scrollTopContainer:hover{
+    background-color: #00022e;
+}
+
+.scrollBtn{
+    font-size: 25px;
+    color:white;
+}
+
+
+
+
+
+
+
+@media all and (max-width:300px),(max-width:480px),(max-width:600px),(max-width:768px){
+
+.firstHeader{
+    font-size: 15px;
+    text-align: center;
+}
+
+.schoolName{
+    font-size: 30px;
+}
+
+.topHeader{
+    height: 86px;
+    width: auto;
+}
+
+.slideFirstbtn{
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-text .paraText{
+    color: red;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+}
+.PrimaryBtn, .secondaryBtn, .homeEnrolbtn, .slideGalleryBtn{
+    width: 180px;
+    height: 35px;
+    padding-right: 20px;
+
+}
+
+.slideGalleryBtn{
+    border-radius: 10px;
+    padding: 5px;
+    width: 170px;
+    background-color: red;
+    color: white;
+    margin-top: 40%;
+
+}
+
+
+.footerCont{
+    color: white;
+    margin-top: 30%;
+    background-color: #00022e;
+}
+h4.footNum, h4.footEmail{
+    position: relative;
+    left: 3%;
+}
+
+
+.socialMedia{
+    margin-top: 15%;
+}
+
+
+.socialCont span{
+    font-size: 35px;
+}
+
+
 }

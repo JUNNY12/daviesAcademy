@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="icon" type="image/jpg" href="gallery/carousel1.jpg">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="Gallerypage.css">
     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
@@ -12,51 +13,73 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid topHeader mb-5">
+        <div class="container-fluid topHeader mb-3">
             <div class="row">
-                <div class="col-6">
-                    <h3>Lorem Ipsum</h3>
+                <div class="col-lg-6">
+                    <span class="schoolName">Davies Academy</span>
 
                 </div>
-                <div class="col-6 firstHeader">
-                    
-                    <span class="emailIcon"><i class='bx bxs-envelope'></i></span>
-                    <span class="email" style="border-right: 2px solid;"><h3>LoremIpsum@gmail.com</h3></span>
-                    <span class="phoneIcon"><i class='bx bxs-phone-call' ></i></span>
-                    <span class="phoneNumber"><h3>090-XXXX-XX09</h3></span>
-                    
+                <div class="col-lg-6 firstHeader">
+                 <span>Our Slogan : Emmanuel <em><strong>"God Is With Us"</strong></em></span>
                 </div>
 
             </div>
 
         </div>
 
+        
+       <div class="container">
+           <nav class="navbar navbar-expand-lg navbar-light">
+               <a href="" class="navbar-brand">
+                <img src="gallery/carousel2.jpg" alt="School logo" width="55" height="50" class="d-inline-block align-top"></a>
+               <button class="navbar-toggler" 
+               type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class=" collapse navbar-collapse" id="toggleMobileMenu">
+                   <ul class="navbar-nav ms-auto text-center">
+                       <li>
+                           <a href="home.html" class="nav-link">Home</a>
+                       </li>
+                       
+                       <li>
+                        <a href="aboutus.html" class="nav-link">About Us</a>
+                    </li>
+                    
+                    <li>
+                        <a href="staffpage.html" class="nav-link">Staff</a>
+                    </li>
+                    
+                    <li>
+                        <a href="nursery&primary.html" class="nav-link">Nursery&Primary</a>
+                    </li>
+                    
+                    <li>
+                        <a href="secondary.html" class="nav-link">Secondary</a>
+                    </li>
+                    
+                    <li>
+                        <a href="Gallerypage.html" class="nav-link">Gallery</a>
+                    </li>
+                    
+                    <li>
+                        <a href="contact us.html" class="nav-link">Contact Us</a>
+                    </li>
+                    
+                   </ul>
+               </div>
 
-        <nav>
-            <div class="container-fluid mt-5 mb-5">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="gallery/carousel2.jpg" class="img-fluid" width="80px" height="80px" alt="">
-
-                    </div>
-                    <div class="col-8 navContent">
-
-                        <span class="navs" role="button"><strong><a href="home.html">Home</a></strong></span>
-                        <span class="navs"  role="button"><strong><a href="aboutus.html">About Us</a></strong></span>
-                       <span class="navs" role="button" ><strong><a href="staffpage.html">Staff</a></strong></span>
-                       <span class="navs" role="button"><strong><a href="nursery&primary.html">Nursery&Primary</a></strong></span>
-                       <span class="navs" role="button"><strong><a href="secondary.html">Secondary</a></strong></span>
-                       <span class="navs" role="button"><strong><a href="Gallerypage.html">Gallery</a></strong></span>
-                       <span class="navs" role="button"><strong><a href="contact us.html">Contact Us</a></strong></span>
-
-                    </div>
-                </div>
-                
-            </div>
-
-        </nav>
-
-
+           </nav>
+       </div>
+       
+       
+       <img src="gallery/carousel2.jpg" style="width: 100%; height: 350px;" class="mb-5 mt-3" alt="">
+    
     </header>
 
 
@@ -70,28 +93,29 @@
         </h1>
 
         <div class="row">
-            <div class="col-4 galleryBtn">
-                <button id="achievementCont">
+            <div class="col-lg-4 mb-5 galleryBtn">
+                <button onclick="achievementShow()" id="achievementCont">
                     Achievements
                 </button>
 
-                <button id="extracuricularCont">
+                <button onclick="extracurricularShow()" id="extracuricularCont">
                     Extracurricular Activities 
                 </button>
-                <button id="buildingsCont">
+                <button onclick="buildingShow()" id="buildingsCont">
                     Buildings
                 </button>
-                <button  id="alumniCont">
+                <button onclick="alumniShow()"  id="alumniCont">
                     Alumni
                 </button>
                 
 
             </div>
-            <div class="col-8">
-               <div class="achievement"  >
-                <h2>Our Achievements</h2>
+            <div class="col-lg-8">
+
+               <div class="achievement" >
+                <h2 class="mb-4">Our Achievements</h2>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -101,7 +125,7 @@
                           </div>
 
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -111,7 +135,7 @@
                           </div>
                         
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -128,9 +152,9 @@
 
 
                 <div class="extracurricular">
-                    <h2>Extracurricular Activities</h2>
+                    <h2 class="mb-4">Extracurricular Activities</h2>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -140,7 +164,7 @@
                           </div>
 
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -150,7 +174,7 @@
                           </div>
                         
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -164,7 +188,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -174,7 +198,7 @@
                           </div>
 
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -184,7 +208,7 @@
                           </div>
                         
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -198,7 +222,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -208,7 +232,7 @@
                           </div>
 
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -218,7 +242,7 @@
                           </div>
                         
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4">
                         <div class="card" style="width: 18rem;">
                             <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -235,9 +259,9 @@
 
 
                 <div class="buildings" style="display: none;" >
-                    <h2>Our Buildings</h2>
+                    <h2 class="mb-4">Our Buildings</h2>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -247,7 +271,7 @@
                               </div>
     
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -257,7 +281,7 @@
                               </div>
                             
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -271,7 +295,7 @@
                     </div>
     
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -281,7 +305,7 @@
                               </div>
     
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -291,7 +315,7 @@
                               </div>
                             
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -305,7 +329,7 @@
                     </div>
     
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -315,7 +339,7 @@
                               </div>
     
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -325,7 +349,7 @@
                               </div>
                             
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4">
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                 <div class="card-body">
@@ -345,9 +369,9 @@
 
 
                 <div class="alumni" style="display: none;">
-                        <h2>Our Graduates</h2>
+                        <h2 class="mb-4">Our Graduates</h2>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <div class="card" style="width: 18rem;">
                                     <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                     <div class="card-body">
@@ -357,7 +381,7 @@
                                   </div>
         
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <div class="card" style="width: 18rem;">
                                     <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                     <div class="card-body">
@@ -367,7 +391,7 @@
                                   </div>
                                 
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <div class="card" style="width: 18rem;">
                                     <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                     <div class="card-body">
@@ -381,7 +405,7 @@
                         </div>
         
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <div class="card" style="width: 18rem;">
                                     <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                     <div class="card-body">
@@ -391,7 +415,7 @@
                                   </div>
         
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <div class="card" style="width: 18rem;">
                                     <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                     <div class="card-body">
@@ -401,7 +425,7 @@
                                   </div>
                                 
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <div class="card" style="width: 18rem;">
                                     <img class="card-img-top" src="gallery/placeHolder.jpg" alt="Card image cap">
                                     <div class="card-body">
@@ -425,6 +449,20 @@
             </div>
         </div>
     </div>
+
+
+
+    
+    <div role="button" class="scrollTopContainer" id="scrollTop" onclick="scrolling()">
+        <div class="scrollBtn">
+           <i class='bx bxs-up-arrow'></i>
+        </div>
+    </div>
+
+
+
+
+
 </main>
 
 
@@ -433,66 +471,64 @@
 
 
 
+<footer class="footerCont">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2 class="footerHeader">Davies Academy</h2>
 
-    <footer class="footerCont">
-        <div class="container-fluid mt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <h2 class="footerHeader">Davies Academy</h2>
+                    <p>
+                        non provident, similique sunt in culpa qui 
+                        officia deserunt mollitia animi,
+                        id est laborum et dolorum fuga. Et harum 
+                        quidem rerum facilis est et expedita distinctio.
+                        Nam libero tempore, cum soluta nobis est eligendi  
+                    </p>
 
-                        <p>
-                            non provident, similique sunt in culpa qui 
-                            officia deserunt mollitia animi,
-                            id est laborum et dolorum fuga. Et harum 
-                            quidem rerum facilis est et expedita distinctio.
-                            Nam libero tempore, cum soluta nobis est eligendi  
-                        </p>
+                </div>
 
+                <div class="col-lg-4">
+                    <h2 class="footerHeader">Contact Us</h2>
+
+                    <p>
+                        non provident, similique sunt in culpa qui 
+                        officia deserunt mollitia animi,
+                        id est laborum et dolorum fuga. Et harum 
+                        quidem rerum facilis est et expedita distinctio.
+                        Nam libero tempore, cum soluta nobis   <br><br>
+                    </p>
+
+                    <div style="display: flex; position: relative; margin-left: 5%; margin-bottom: 1%;">
+                        <i style="position: absolute; left:-6%; bottom: 30%; font-size: 18px;"class='bx bxs-phone-call' ></i>
+                        <h4 class="footNum" >090-XXXX-XX09</h4>
+                    </div>   
+                
+                    <div  style="display: flex; position: relative; margin-left: 5%;" class="footerContact">
+                        <i style="position: absolute; left: -6%; bottom: 30%; font-size: 18px;" class='bx bxs-envelope'></i>
+                        <h4 class="footEmail">est eligendi@gmail.com</h4>
                     </div>
 
-                    <div class="col-4">
-                        <h2 class="footerHeader">Contact Us</h2>
+                     
+                </div>
 
-                        <p>
-                            non provident, similique sunt in culpa qui 
-                            officia deserunt mollitia animi,
-                            id est laborum et dolorum fuga. Et harum 
-                            quidem rerum facilis est et expedita distinctio.
-                            Nam libero tempore, cum soluta nobis   <br><br>
-                        </p>
+                <div class="col-lg-4">
+                    <h2 class="footerHeader socialMedia">Social Media</h2>
 
-                        <div style="display: flex; position: relative; margin-left: 5%; margin-bottom: 5%;">
-                            <i style="position: absolute; left:-6%; bottom: 30%; font-size: 18px;"class='bx bxs-phone-call' ></i>
-                            <h4 class="footNum" >090-XXXX-XX09</h4>
-                        </div>   
-                    
-                        <div  style="display: flex; position: relative; margin-left: 5%;" class="footerContact">
-                            <i style="position: absolute; left: -6%; bottom: 30%; font-size: 18px;" class='bx bxs-envelope'></i>
-                            <h4>est eligendi@gmail.com</h4>
-                        </div>
-
-                         
-                    </div>
-
-                    <div class="col-4">
-                        <h2 class="footerHeader">Social Media</h2>
-
-                        <p class="socialCont">
-                            <span role="button"><i class='bx bxl-twitter' ></i></span>
-                            <span role="button"><i class='bx bxl-whatsapp' ></i></span>
-                            <span role="button"><i class='bx bxl-instagram' ></i></span>
-                            <span role="button"><i class='bx bxl-facebook' ></i></span>
-                        </p>
-                    </div>
+                    <p class="socialCont">
+                        <span role="button"><i class='bx bxl-twitter' ></i></span>
+                        <span role="button"><i class='bx bxl-whatsapp' ></i></span>
+                        <span role="button"><i class='bx bxl-instagram' ></i></span>
+                        <span role="button"><i class='bx bxl-facebook' ></i></span>
+                    </p>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 
-    
-    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-    <script src="project.js"></script>
+<script src="project.js"></script>
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

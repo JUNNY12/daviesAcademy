@@ -18,19 +18,22 @@
 }
 
 
-.alumni .col-4, .extracurricular .col-4, .achievement .col-4, .buildings .col-4 {
+.alumni .col-lg-4, .extracurricular .col-lg-4, .achievement .col-lg-4, .buildings .col-lg-4 {
     margin-bottom: 8%;
 }
 
-.col-8 h2{
+.col-8-lg h2{
     color: #00022e;
     margin-bottom: 5%;
 }
 
-.col-8 .card-title{
+.col-8-lg .card-title{
 color: red;
 }
 
 .extracurricular{
     display: none;
 }
+
+
+

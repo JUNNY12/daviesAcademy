@@ -5,29 +5,22 @@ input, button{
 
 form input{
     margin-bottom: 2%;
-    width: 80%;
+    width: 75vw;
     height: 50px;
 }
 form textarea{
-    width: 80%;
+    width: 75vw;
     margin-bottom: 2%;
 }
 .btnForm{
-    width: 45%;
-    height: 50px;
     background-color: #00022e;
     border-radius: 30px;
-    text-align: center;
     color: white;
     position: relative;
-    font-size: 18px;
+    font-size: 30px;
+}
 
-}
-.btnForm p{
-    position: absolute;
-    top:25%;
-    left: 25%;
-}
+
 .btnForm:hover{
     background-color: red;
 }
@@ -62,3 +55,10 @@ form textarea{
 }
 
 
+
+
+@media all and (max-width:300px),(max-width:480px),(max-width:600px),(max-width:768px){
+    .whatsappChat{
+        width:250px ;
+    }
+}
